@@ -1,0 +1,30 @@
+/* @import-normalize;
+
+:root {
+  Primary
+  --clr-beaver: hsl(27, 22%, 51%);
+  --clr-codGray: hsl(0, 0%, 7%);
+  Secondary
+  --clr-mirage: hsl(234, 30%, 13%);
+  --clr-ebonyClay: hsl(218, 21%, 18%);
+  --clr-shuttleGray: hsl(217, 14%, 42%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  margin: 0 auto;
+  max-width: 144rem;
+} */

@@ -1,0 +1,41 @@
+//Decorative line
+@mixin divide {
+  content: "";
+  background-image: url("../../assets/patterns/pattern-divide.svg");
+  position: absolute;
+  height: 0.7rem;
+  width: 7.1rem;
+}
+
+@mixin patternLines {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/patterns/pattern-lines.svg);
+  width: 16rem;
+  height: 7.6rem;
+}
+
+//MEDIA QUERIES
+@mixin med {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: 1441px) {
+    @content;
+  }
+}

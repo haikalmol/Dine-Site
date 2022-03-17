@@ -1,0 +1,32 @@
+.header {
+  background-color: var(--clr-codGray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-align: center;
+  color: #ffff;
+  padding: 24.4rem 0 14rem;
+
+  @include med {
+    padding: 37.4rem 0 21.6rem;
+  }
+
+  @include xl {
+    padding: 6.5rem 0 19.5rem;
+    background-size: cover;
+    text-align: left;
+  }
+
+  &__logo {
+    width: 8.2rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    border: none;
+    background: none;
+
+    @include med {
+      height: auto;
+      width: auto;
+    }
+  }
+}

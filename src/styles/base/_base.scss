@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  margin: 0 auto;
+  max-width: 170rem;
+  color: var(--clr-ebonyClay);
+
+  @media screen and (min-width: 1701px) {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+
+h1,
+h2 {
+  font-size: 3.2rem;
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-weight: var(--fw-light);
+  line-height: 4rem;
+  letter-spacing: -0.4px;
+}
+
+h2 {
+  line-height: 125%;
+  letter-spacing: -0.4px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  letter-spacing: -0.22px;
+}
+
+p,
+strong {
+  font-size: 1.5rem;
+  line-height: 167%;
+  letter-spacing: -0.19px;
+}
+
+a,
+button {
+  color: var(--clr-white);
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: var(--fw-semi-bold);
+  line-height: 114%;
+}
+
+a,
+button,
+input,
+select,
+.phone {
+  &:focus {
+    outline: 2px dotted var(--clr-beaver);
+    outline-offset: 4px;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+li {
+  list-style: none;
+}

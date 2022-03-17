@@ -1,0 +1,51 @@
+.hero {
+  display: grid;
+  grid-row-gap: 2.4rem;
+  justify-items: center;
+  margin: 0 auto;
+
+  @include med {
+    width: 57.3rem;
+  }
+
+  @include xl {
+    justify-items: left;
+    max-width: 52.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    padding-top: 0.8rem;
+
+    @include med {
+      font-size: 4.8rem;
+      line-height: 133%;
+      letter-spacing: -0.06px;
+    }
+
+    @include xl {
+      font-size: 6.4rem;
+      line-height: 112%;
+      letter-spacing: -0.8px;
+      padding-top: 13.7rem;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 0.8rem;
+    max-width: 45rem;
+
+    @include med {
+      max-width: unset;
+      font-size: 1.8rem;
+      letter-spacing: -0.225px;
+      padding-bottom: 0;
+    }
+
+    @include xl {
+      padding-bottom: 1.8rem;
+      line-height: 167%;
+    }
+  }
+}
